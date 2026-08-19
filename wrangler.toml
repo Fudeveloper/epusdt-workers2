@@ -1,0 +1,20 @@
+name = "epusdt-workers2"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+APP_NAME = "epusdt-workers"
+APP_URI = "https://epusdt.localhost"
+APP_DEBUG = "true"
+API_AUTH_TOKEN = "xxxxxxxxxx"
+TG_BOT_TOKEN = "0000000:xxxxxxxxxxxxxxxx"
+TG_MANAGE = "xxxxxxxx"
+ORDER_EXPIRATION_TIME = "1440"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "epusdt-workers"
+database_id = "c9a6215e-0db8-4ad2-8757-df7ba853c744"
+
+[triggers]
+crons = ["* * * * *"]
